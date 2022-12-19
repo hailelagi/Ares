@@ -33,7 +33,7 @@ defmodule AresWeb.Websockets.LogSocket do
   end
 
   @impl true
-  def terminate(_reason, %{user_id: id}) do
+  def terminate(_reason, _state) do
     :ok
   end
 end
